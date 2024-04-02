@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+            rel="stylesheet">
+        <title>Cafeteria</title>
+    </head>
+
+    <body>
+        <!-- Criando o cabeçalho e colocando a imagem da logo -->
+        <header class="header">
+            <section>
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <!-- Fim do cabeçalho -->
+
+                <!-- Links de navegação -->
+                <nav class="navbar">
+                    <a class="navbar" href="#">Home</a>
+                    <a class="navbar" href="#about">Sobre</a>
+                    <a class="navbar" href="#home">Menu</a>
+                    <a class="navbar" href="#review">Avaliações</a>
+                    <!-- Corrigido: "review" para "Avaliações" -->
+                    <a class="navbar" href="#address">Endereço</a>
+                    <!-- Colocamos um id # para quando for navegar ele vai levar até o id -->
+                </nav>
+
+                <div class="icons">
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/pastel-glyph/30/ffffff/search--v2.png"
+                        alt="search--v2" />
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/material-outlined/30/ffffff/shopping-cart--v1.png"
+                        alt="shopping-cart--v1" />
+
+                </div>
+            </section>
+        </header>
+        <!-- Fim do cabeçalho -->
+
+        <!-- Iniciando o primeiro container -->
+        <div class="home-container">
+            <!-- Seção do primeiro container -->
+            <section id="home">
+                <!-- Seção do conteúdo -->
+                <div class="content">
+                    <h3>O melhor café da região</h3>
+                    <!-- Corrigido: "mlhor" para "melhor" -->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quae explicabo dicta similique est cumque
+                        incidunt fugit voluptatibus molestias laboriosam!</p>
+                    <a href="#" class="btn">Peça o seu Agora</a>
+                </div>
+            </section>
+        </div>
+
+        <div> <!-- Sessão Sobre Nós -->
+            <section class="about" id="about">
+                <h2 class="title">Sobre <span>Nós </span></h2>
+                <!-- Sessão do título do container -->
+                <div class="row">
+                    <div class="container-img">
+                        <img src="./img/xicara.jpg" alt="sobre-nos">
+                        <!-- Sessão imagem xícara -->
+                    </div>
+
+                    <!-- Sessão Sobre Nós -->
+                    <div class="content">
+                        <!-- Sessão content igual a content acima -->
+                        <h3>O Que deixa nosso café especial</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Rem, consequatur. Quasi quis
+                            repudiandae, voluptates neque facere, ea esse
+                            facilis, recusandae eos repellendus laborum est
+                            voluptas laboriosam perspiciatis eligendi ipsum
+                            molestias.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Rem, consequatur. Quasi quis
+                            repudiandae, voluptates neque facere, ea esse
+                            facilis, recusandae eos repellendus laborum est
+                            voluptas laboriosam perspiciatis eligendi ipsum
+                            molestias.</p>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div> <!-- Fim da sessão Sobre Nós -->
+                </div>
+            </section>
+
+            <!--sessão menus-->
+            <section class="menu" id="menu">
+                <h2 class="title">Nosso <span>Menu </span></h2>
+
+                <!--sessão Div para nosso cards / menus-->
+                <div class="box-container">
+                    <div class="box">
+                        <img src="./img/cafe2.png" alt="iten1">
+                        <!--Imagem do produto-->
+                        <h3>Café Espresso</h3> <!--Descrição-->
+                        <div class="price">R$15,90 <span>R$20,99 </span></div>
+                        <!--Valor PREÇO CHEIO E COM DESCONTO-->
+                        <a href="#" class="btn">Adicione ao Carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/cafe3.png" alt="iten2">
+                        <!--Imagem do produto-->
+                        <h3>Café Latte</h3> <!--Descrição-->
+                        <div class="price">R$18,90 <span>R$24,99 </span></div>
+                        <!--Valor PREÇO CHEIO E COM DESCONTO-->
+                        <a href="#" class="btn">Adicione ao Carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/cafe4.png" alt="iten3">
+                        <!--Imagem do produto-->
+                        <h3>Café Cappuccino</h3> <!--Descrição-->
+                        <div class="prince">R$20,90 <span>R$28,99 </span></div>
+                        <!--Valor PREÇO CHEIO E COM DESCONTO-->
+                        <a href="#" class="btn">Adicione ao Carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/cafe5.png" alt="iten4">
+                        <!--Imagem do produto-->
+                        <h3>Café Mocha</h3> <!--Descrição-->
+                        <div class="price">R$25,90 <span>R$30,99 </span></div>
+                        <!--Valor PREÇO CHEIO E COM DESCONTO-->
+                        <a href="#" class="btn">Adicione ao Carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/cafe6.png" alt="iten5">
+                        <!--Imagem do produto-->
+                        <h3>Café Americano</h3> <!--Descrição-->
+                        <div class="prince">R$12,90 <span>R$19,99 </span></div>
+                        <!--Valor PREÇO CHEIO E COM DESCONTO-->
+                        <a href="#" class="btn">Adicione ao Carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/cafe1.png" alt="iten6">
+                        <!--Imagem do produto-->
+                        <h3>Café Descafeinado</h3> <!--Descrição-->
+                        <div class="price">R$29,90 <span>R$35,99 </span></div>
+                        <!--Valor PREÇO CHEIO E COM DESCONTO-->
+                        <a href="#" class="btn">Adicione ao Carrinho</a>
+                    </div>
+                </div>
+
+            </section>
+            <section class="review" id="review">
+                <h2 class="title">Nossos <span>Clientes </span></h2>
+                <div class="box-container">
+
+                    <div class="box">
+                        <img src="./img/aspas.png" alt="comentario">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Natus quam laboriosam fuga enim
+                            obcaecati, quas quidem vero, quae non ipsum
+                            asperiores eaque odit quaerat, eum blanditiis.
+                            Impedit, odio excepturi! Nobis!</p>
+                        <img src="./img/cliente1.png" alt="cliente1"
+                            class="user">
+
+                        <h3>Julio Chaves</h3>
+                        <div class="stars">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/aspas.png" alt="comentario">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Natus quam laboriosam fuga enim
+                            obcaecati, quas quidem vero, quae non ipsum
+                            asperiores eaque odit quaerat, eum blanditiis.
+                            Impedit, odio excepturi! Nobis!</p>
+                        <img src="./img/cliente2.png" alt="cliente2"
+                            class="user">
+                        <h3>Junia Barreto</h3>
+                        <div class="stars">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/aspas.png" alt="comentario">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Natus quam laboriosam fuga enim
+                            obcaecati, quas quidem vero, quae non ipsum
+                            asperiores eaque odit quaerat, eum blanditiis.
+                            Impedit, odio excepturi! Nobis!</p>
+                        <img src="./img/cliente3.png" alt="cliente3"
+                            class="user">
+                        <h3>Carlos Fernandes</h3>
+                        <div class="stars">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                            <img
+                                src="https://img.icons8.com/material-outlined/96/ffffff/star--v2.png"
+                                alt="star--v2"
+                                style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sessão de endereço -->
+            <section class="address" id="address">
+                <h2 class="title">Nosso <span>Endereço </span></h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58519.9711140389!2d-46.75502065136721!3d-23.550544299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5757726ddc09%3A0x39ec20e62e868b26!2sThe%20Coffee!5e0!3m2!1spt-BR!2sbr!4v1712088182816!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <!-- Rodapé -->
+            <section class="footer">
+                <div class="share">
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/ios/30/ffffff/instagram-new--v1.png"
+                        alt="instagram-new--v1" />
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/ios/30/ffffff/facebook-new.png"
+                        alt="facebook-new" />
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/ios/30/ffffff/whatsapp--v1.png"
+                        alt="whatsapp--v1" />
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/ios/30/ffffff/twitterx--v2.png"
+                        alt="twitterx--v2" />
+                </div>
+            </section>
+
+        </body>
+
+    </html>
