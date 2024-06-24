@@ -7,7 +7,7 @@
 
 Este é um projeto simples desenvolvido pelo DevClub, consistindo em um template para uma cafeteria. O projeto utiliza HTML e CSS para criar uma página web básica para uma cafeteria, com recursos como animação no menu, cabeçalho fixo, estrelas de avaliações, endereço e um mapa.
 
-![10](https://github.com/thmedu/Coffee-shop/assets/141462806/3bfebf5a-4b1f-48ad-b82e-98c454266f4b)
+![Post minimalista marketing digital roxo branco e azul (2)](https://github.com/thmedu/Coffee-shop/assets/141462806/d02cb6de-8169-40e9-9cd0-99f5a1d7fda6)
 
 ## Conteúdo
 
