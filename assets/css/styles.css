@@ -1,0 +1,513 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+    overflow-y: auto; /* Garante que a barra de rolagem vertical apareça conforme necessário */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px; /* Adiciona um espaçamento interno nas laterais para conteúdo dentro da container */
+}
+
+/* Estilo do Header */
+.header {
+    background-color: #2d211d;
+    color: #fff;
+    padding: 1rem 0; /* Padding vertical ajustado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    position: fixed; /* Fixa o header no topo da página */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+.header:hover {
+    background-color: #1a130f; /* Cor do header ao passar o mouse */
+}
+
+/* Estilo para o container da barra de navegação */
+.header .container {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal (horizontal) */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilo para o logo */
+.header .logo {
+    display: flex; /* Torna o container do logo um flex container */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.header .logo img {
+    max-width: 80px; /* Tamanho máximo do logo */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 10px; /* Espaçamento entre o logo e o texto */
+    border-radius: 50%; /* Arredondamento do logo */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.header .logo img:hover {
+    transform: rotate(360deg); /* Efeito de rotação ao passar o mouse */
+}
+
+.header .logo h1 {
+    font-size: 1.8rem; /* Tamanho do texto do logo */
+    font-weight: 700; /* Espessura da fonte */
+    margin-left: 10px; /* Espaçamento do texto em relação ao logo */
+}
+
+/* Estilo para a barra de navegação */
+.header .nave {
+    display: flex; /* Torna o container da navegação um flex container */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.header .nave .navbar {
+    margin-left: auto; /* Empurra os links da navegação para o canto direito */
+}
+
+.header .nave .navbar a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 3rem; /* Espaçamento interno dos links */
+    transition: color 0.3s ease; /* Transição suave da cor do texto */
+}
+
+.header .nave .navbar a:hover {
+    color: #c66203; /* Cor alterada ao passar o mouse */
+}
+
+.header .nave .icons {
+    display: flex; /* Torna o container dos ícones um flex container */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.header .nave .icons a {
+    margin-left: 15px; /* Espaçamento entre os ícones */
+    color: #fff; /* Cor inicial dos ícones */
+    font-size: 1.2rem; /* Tamanho da fonte dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+.header .nave .icons a:hover {
+    transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
+    color: #f0c143; /* Cor dos ícones ao passar o mouse */
+}
+
+/* Estilo para o botão flutuante na seção Home */
+.home .btn-floating {
+    position: fixed; /* Posiciona o botão de forma fixa na tela */
+    bottom: 2rem; /* Distância do botão em relação ao rodapé */
+    right: 2rem; /* Distância do botão em relação à borda direita */
+    background-color: rgb(45, 33, 29);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem; /* Tamanho da fonte */
+    padding: 1rem; /* Espaçamento interno */
+    text-decoration: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    z-index: 1000; /* Garante que o botão esteja acima de outros conteúdos */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para o botão */
+.home .btn-floating:hover {
+    background-color: #c66203; /* Cor de fundo alterada no hover */
+}
+
+/* Estilo do Botão */
+.btn {
+    display: inline-block;
+    background-color: #c66203; /* Cor de fundo */
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e68a1e; /* Cor de fundo alterada ao passar o mouse */
+    color: #fff;
+}
+
+/* Estilos Adicionais */
+.content-wrapper {
+    padding: 1rem 0; /* Ajuste no padding */
+}
+
+.home {
+    padding: 10rem 0;
+    text-align: center;
+    background-image: url('../img/fundo.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Cor do texto */
+    z-index: 1; /* Ajuste z-index se necessário */
+    position: relative; /* Garante que z-index funcione */
+}
+
+.home h1 {
+    font-size: 5rem;
+    margin-bottom: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home p,
+.about .content p {
+    font-size: 1.6rem;
+    margin-bottom: 10rem;
+}
+
+
+.menu {
+    background-color: #2d211d; /* Cor de fundo fallback */
+    background-image: url('../img/fundo2.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra todo o elemento */
+    background-position: left center; /* Movendo a imagem mais para o lado esquerdo e centralizando verticalmente */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    padding: 3rem 0; /* Adiciona espaçamento interno na seção */
+}
+
+.about,
+.menu,
+.review,
+.address {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about h2,
+.menu h2,
+.review h2,
+.address h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #f8f9fa; /* Cor do título ajustada */
+}
+
+.about .title span,
+.menu .title span,
+.review .title span,
+.address .title span {
+    color: #fff;
+}
+.about {
+    font-size: 1.6rem; /* Tamanho da fonte */
+    line-height: 2.0; /* Espaçamento entre linhas */
+    margin-bottom: 2rem; /* Espaçamento inferior */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    color: #fff; /* Cor do texto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.about .container-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about .container-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about .content {
+    flex: 1;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2d211d; /* Cor de fundo */
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c66203; /* Cor de fundo alterada ao passar o mouse */
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.menu .box {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu .box:hover {
+    transform: translateY(-10px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.menu .box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    height: 50px;
+   
+}
+
+.menu .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.menu .box .price {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.menu .box .price span {
+    font-size: 0.9rem;
+    color: #ff2828; /* Cor alterada */
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+}
+
+.menu .box .btn {
+    margin-top: 1rem;
+}
+.carousel {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 3rem;
+    background-color: #1A130F;
+}
+
+.section-title {
+    font-size: 3rem; /* Tamanho do título aumentado */
+    color: #f8f9fa;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden; /* Remove a barra de rolagem */
+    margin-bottom: 1rem;
+    /* Adicione um estilo flexível para o layout responsivo */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-slide {
+    flex: 0 0 auto; /* Impede que os slides se expandam */
+    margin-right: 1rem; /* Espaçamento entre os slides */
+    border-radius: 8px;
+    overflow: hidden; /* Garante que as bordas arredondadas se apliquem corretamente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para os slides */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+    width: 250px; /* Largura fixa para os slides */
+    max-height: 250px; /* Altura máxima para os slides */
+    position: relative; /* Posição relativa para alinhar a legenda */
+    margin-bottom: 1rem; /* Espaçamento inferior entre os slides */
+}
+
+.carousel-slide img {
+    width: 90%; /* Assegura que a largura da imagem ocupe todo o espaço disponível */
+    height: 105%; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
+}
+
+.carousel-caption {
+    position: absolute; /* Posição absoluta para a legenda */
+    bottom: 0; /* Alinha a legenda ao fundo */
+    left: 0; /* Alinha a legenda à esquerda */
+    width: 100%; /* Largura total */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para a legenda */
+    color: #fff; /* Cor do texto da legenda */
+    padding: 1rem; /* Espaçamento interno para a legenda */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento na largura e altura */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Efeito de transição suave para a opacidade */
+}
+
+.carousel-slide:hover .carousel-caption {
+    opacity: 1; /* Mostra a legenda ao passar o mouse */
+}
+
+.carousel-caption h3 {
+    font-size: 1.5rem; /* Tamanho do título da legenda */
+    margin-bottom: 0.5rem; /* Espaçamento inferior do título */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Tamanho do texto da legenda */
+    margin-bottom: 0; /* Remove o espaçamento inferior padrão do parágrafo */
+}
+
+.carousel-prev,
+.carousel-next {
+    background-color: #2d211d;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: #c66203; /* Cor alterada ao passar o mouse */
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 3rem;
+}
+.review .box {
+    background-color: #2d211d;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease;
+    margin-right: 15px; /* Adiciona espaçamento à direita de cada .box */
+}
+
+.review .box:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último .box */
+}
+.review .box p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f8f9fa; /* Cor do texto */
+}
+
+.review .box img.user {
+    width: 100px; /* Ajuste a largura da imagem conforme necessário */
+    height: 100px; /* Define a altura da imagem */
+    border-radius: 50%; /* Bordas arredondadas para um estilo mais suave */
+    margin-bottom: 1rem; /* Espaçamento inferior para separar a imagem do conteúdo */
+    object-fit: cover; /* Garante que a imagem cubra completamente o espaço alocado */
+    object-position: center; /* Centraliza a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para um efeito elevado */
+}
+
+.review .box h3 {
+    font-size: 1.2rem;
+    color: #6c757d; /* Cor do título */
+}
+
+.review .box .stars {
+    display: flex;
+    justify-content: center; /* Centraliza as estrelas horizontalmente */
+    margin-top: 1rem; /* Espaçamento superior */
+}
+.review .box .stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.review .box .stars img {
+    width: 30px;
+    height: auto;
+    margin: 0 2px;
+    transition: transform 0.3s ease;
+}
+
+.review .box .stars img:hover {
+    transform: scale(1.2); /* Aumenta as estrelas em 20% ao passar o mouse */
+}
+
+/* Estilo para a seção de endereço */
+
+.address {
+    background-image: url('../img/fundo7.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Cobrir todo o espaço do elemento */
+    background-position: center; /* Centralizar a imagem */
+    padding: 5rem 0; /* Aumenta o espaçamento ao redor do conteúdo */
+    text-align: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.address h2.title {
+    color: #fff; /* Cor do título branca */
+    font-size: 3rem; /* Tamanho do título aumentado */
+    margin-bottom: 2rem; /* Espaçamento inferior */
+}
+
+.address p {
+    color: #fff; /* Cor do texto branca */
+    font-size: 1.2rem; /* Tamanho do texto */
+    max-width: 800px; /* Largura máxima do texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    line-height: 1.6; /* Altura da linha */
+}
+
+.address iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra mais intensa com elevação */
+    margin-top: 3rem;
+    filter: brightness(110%) contrast(110%); /* Ajuste de brilho e contraste */
+}
+
+
+
+.footer {
+    background-color: #2d211d; /* Cor de fundo */
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer .share {
+    margin-top: 1rem;
+}
+
+.footer .share img {
+    margin: 0 10px;
+    cursor: pointer;
+}

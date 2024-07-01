@@ -1,0 +1,118 @@
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -350%; /* Inicia o sidebar fora da tela */
+  width: 600px; /* Largura padrão do sidebar */
+  height: 70%;
+  background-color: #2d211d; /* Cor de fundo */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto; /* Adiciona scroll quando necessário */
+  border-radius: 10px;
+}
+
+/* Mostra o sidebar quando a classe open é adicionada */
+.cart-sidebar.open {
+  right: 0;
+}
+
+/* Cabeçalho do sidebar */
+.cart-header {
+  background-color: #1a130f; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3d322c; /* Linha inferior */
+}
+
+.cart-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-transform: uppercase; /* Transforma o texto em maiúsculo */
+}
+
+/* Estilo dos itens no carrinho */
+.cart-items {
+  padding: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #3d322c; /* Linha inferior */
+  padding-bottom: 0.5rem;
+}
+
+.cart-item-image {
+  width: 60px; /* Largura da imagem */
+  height: 60px; /* Altura da imagem */
+  object-fit: cover; /* Redimensiona a imagem mantendo proporções e cobrindo o espaço */
+  border-radius: 50%; /* Borda circular */
+  overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o contêiner circular */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a imagem */
+}
+
+
+.cart-item-details {
+  margin-left: 1rem;
+}
+
+.cart-item-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.cart-item-price {
+  color: #777;
+}
+
+/* Total do carrinho */
+.cart-total {
+  padding: 1rem;
+  border-top: 1px solid #3d322c; /* Linha superior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* Botões do carrinho */
+.cart-buttons {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #4a3933; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #6b534c; /* Cor de fundo ao passar o mouse */
+}
+
+/* Ícone de fechar */
+.close-cart {
+  cursor: pointer;
+  color: #f7efde; /* Cor do ícone */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.close-cart:hover {
+  color: #fff; /* Cor do ícone ao passar o mouse */
+}
