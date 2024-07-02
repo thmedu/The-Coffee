@@ -108,6 +108,8 @@ body {
     transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
     color: #f0c143; /* Cor dos ícones ao passar o mouse */
 }
+
+
 /* Estilo para o botão flutuante na seção Home */
 .home .btn-floating {
     position: fixed; /* Posiciona o botão de forma fixa na tela */

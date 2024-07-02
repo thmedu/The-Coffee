@@ -108,6 +108,40 @@ body {
     transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
     color: #f0c143; /* Cor dos ícones ao passar o mouse */
 }
+
+/* Estilos para os ícones */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: #fff; /* Cor do ícone */
+    margin-right: 10px; /* Espaçamento à direita do ícone */
+}
+
+.cart-icon {
+    position: relative; /* Para posicionar o contador de carrinho */
+}
+
+.cart-icon i {
+    font-size: 1.5rem; /* Tamanho do ícone de carrinho */
+    color: #fff; /* Cor do ícone de carrinho */
+    margin-right: 5px; /* Espaçamento à direita do ícone de carrinho */
+}
+
+.cart-counter {
+    position: absolute; /* Posiciona o contador de carrinho */
+    top: -8px; /* Ajuste para posicionamento vertical */
+    right: -8px; /* Ajuste para posicionamento horizontal */
+    background-color: #f0c143; /* Cor de fundo do contador */
+    color: #000; /* Cor do texto do contador */
+    font-size: 0.8rem; /* Tamanho do texto do contador */
+    padding: 3px 6px; /* Espaçamento interno do contador */
+    border-radius: 50%; /* Bordas arredondadas do contador */
+}
+
 /* Estilo para o botão flutuante na seção Home */
 .home .btn-floating {
     position: fixed; /* Posiciona o botão de forma fixa na tela */

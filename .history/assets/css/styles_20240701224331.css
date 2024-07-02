@@ -87,10 +87,7 @@ body {
     transition: color 0.3s ease; /* Transição suave da cor do texto */
 }
 
-.header .nave .navbar a:hover {
-    color: #c66203; /* Cor alterada ao passar o mouse */
-}
-
+/* Estilos para os ícones na barra de navegação */
 .header .nave .icons {
     display: flex; /* Torna o container dos ícones um flex container */
     align-items: center; /* Centraliza os itens verticalmente */
@@ -108,6 +105,8 @@ body {
     transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
     color: #f0c143; /* Cor dos ícones ao passar o mouse */
 }
+
+
 /* Estilo para o botão flutuante na seção Home */
 .home .btn-floating {
     position: fixed; /* Posiciona o botão de forma fixa na tela */

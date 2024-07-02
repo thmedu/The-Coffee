@@ -87,10 +87,7 @@ body {
     transition: color 0.3s ease; /* Transição suave da cor do texto */
 }
 
-.header .nave .navbar a:hover {
-    color: #c66203; /* Cor alterada ao passar o mouse */
-}
-
+/* Estilos para os ícones na barra de navegação */
 .header .nave .icons {
     display: flex; /* Torna o container dos ícones um flex container */
     align-items: center; /* Centraliza os itens verticalmente */
@@ -108,6 +105,8 @@ body {
     transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
     color: #f0c143; /* Cor dos ícones ao passar o mouse */
 }
+
+
 /* Estilo para o botão flutuante na seção Home */
 .home .btn-floating {
     position: fixed; /* Posiciona o botão de forma fixa na tela */
@@ -202,19 +201,23 @@ body {
     color: #f8f9fa; /* Cor do título ajustada */
 }
 
-.about .title span,
 .menu .title span,
 .review .title span,
 .address .title span {
     color: #fff;
 }
+/* Estilo refinado para a seção About */
 .about {
     font-size: 1.6rem; /* Tamanho da fonte */
-    line-height: 2.0; /* Espaçamento entre linhas */
-    margin-bottom: 2rem; /* Espaçamento inferior */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    margin-bottom: 4rem; /* Espaçamento inferior aumentado */
     font-family: 'Roboto', sans-serif; /* Fonte Roboto */
     color: #fff; /* Cor do texto */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.about .title span {
+    color: #fff; /* Cor do span ajustada */
 }
 
 .about .row {
@@ -241,6 +244,7 @@ body {
     padding: 0 2rem;
 }
 
+/* Botão personalizado */
 .btn {
     display: inline-block;
     background-color: #2d211d; /* Cor de fundo */
@@ -256,6 +260,7 @@ body {
 .btn:hover {
     background-color: #c66203; /* Cor de fundo alterada ao passar o mouse */
 }
+
 
 
 .menu .box-container {

@@ -1,0 +1,214 @@
+/* Responsividade */
+@media (max-width: 768px) {
+  .header .container {
+      flex-direction: column; /* Altera para layout de coluna */
+      align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  .header .logo {
+      margin-bottom: 1rem; /* Espaçamento abaixo do logo */
+  }
+
+  .header .nave .navbar {
+      margin: 1rem 0; /* Espaçamento acima e abaixo da navegação */
+  }
+}
+
+@media (max-width: 576px) {
+  .header .logo h1 {
+      font-size: 1.5rem; /* Tamanho menor do texto do logo */
+  }
+
+  .header .nave .navbar a {
+      padding: 0.5rem; /* Espaçamento interno menor nos links */
+  }
+
+  .header .nave .icons a {
+      font-size: 1rem; /* Tamanho menor da fonte dos ícones */
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo h1 {
+      font-size: 1.2rem; /* Tamanho ainda menor do texto do logo */
+  }
+
+  .header .nave .navbar a {
+      padding: 0.3rem; /* Espaçamento interno mínimo nos links */
+  }
+
+  .header .nave .icons a {
+      font-size: 0.9rem; /* Tamanho ainda menor da fonte dos ícones */
+  }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .header .nave {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .header .nave .icons {
+      margin-top: 1rem;
+    }
+  
+    .home h1 {
+      font-size: 2rem;
+    }
+  
+    .about .row {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+  
+    .about .container-img {
+      margin-bottom: 2rem;
+    }
+  
+    .about .content {
+      padding: 0;
+    }
+  
+    .menu .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+  
+    .menu .box {
+      padding: 1rem;
+    }
+  
+    .review .box-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .review .box {
+      padding: 1rem;
+    }
+  
+    .carousel-slide {
+      height: 200px; /* Reduz a altura dos slides para telas menores */
+      width: 200px; /* Reduz a largura dos slides em telas menores */
+      max-height: 200px; /* Reduz a altura máxima dos slides */
+      margin-right: 0.5rem; /* Espaçamento menor entre os slides */
+    }
+  
+    .cart-sidebar {
+      width: 100%;
+      max-width: 300px; /* Limita a largura máxima para telas maiores */
+    }
+  
+    .cart-item-image {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .cart-item-details {
+      margin-left: 0.5rem;
+    }
+  
+    .cart-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .btn {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home h1 {
+      font-size: 1.5rem;
+    }
+  
+    .home p,
+    .about .content p {
+      font-size: 1rem;
+    }
+  
+    .about .title,
+    .menu .title,
+    .review .title,
+    .address .title {
+      font-size: 2rem;
+    }
+  
+    .menu .box h3 {
+      font-size: 1.2rem;
+    }
+  
+    .menu .box .price {
+      font-size: 1rem;
+    }
+  
+    .review .box p,
+    .review .box h3 {
+      font-size: 1rem;
+    }
+  
+    .carousel-slide {
+      height: 150px; /* Reduz ainda mais a altura dos slides para dispositivos muito pequenos */
+      width: 200px; /* Reduz a largura dos slides para telas menores */
+      max-height: 150px; /* Reduz a altura máxima dos slides */
+      margin-right: 0.5rem; /* Espaçamento menor entre os slides */
+    }
+  }
+  
+  /* Estilos adicionais para telas muito pequenas */
+  @media (max-width: 480px) {
+    .home h1 {
+      font-size: 1.2rem;
+    }
+  
+    .home p,
+    .about .content p {
+      font-size: 0.9rem;
+    }
+  
+    .about .title,
+    .menu .title,
+    .review .title,
+    .address .title {
+      font-size: 1.8rem;
+    }
+  
+    .menu .box h3 {
+      font-size: 1rem;
+    }
+  
+    .menu .box .price {
+      font-size: 0.9rem;
+    }
+  
+    .review .box p,
+    .review .box h3 {
+      font-size: 0.9rem;
+    }
+  
+    .carousel-slide {
+      height: 120px; /* Ajusta a altura dos slides para telas muito pequenas */
+      width: 180px; /* Ajusta a largura dos slides para telas muito pequenas */
+      max-height: 120px; /* Ajusta a altura máxima dos slides */
+      margin-right: 0.3rem; /* Espaçamento mínimo entre os slides */
+    }
+  }
+  
+  /* Estilos adicionais para telas grandes */
+  @media (min-width: 1200px) {
+    .header .nave {
+      gap: 2rem;
+    }
+  
+    .menu .box-container {
+      gap: 2rem;
+    }
+  
+    .review .box-container {
+      gap: 2rem;
+    }
+  }
+  

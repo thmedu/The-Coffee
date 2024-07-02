@@ -1,5 +1,48 @@
 /* Responsividade */
 @media (max-width: 768px) {
+  .header .container {
+      flex-direction: column; /* Altera para layout de coluna */
+      align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  .header .logo {
+      margin-bottom: 1rem; /* Espaçamento abaixo do logo */
+  }
+
+  .header .nave .navbar {
+      margin: 1rem 0; /* Espaçamento acima e abaixo da navegação */
+  }
+}
+
+@media (max-width: 576px) {
+  .header .logo h1 {
+      font-size: 1.5rem; /* Tamanho menor do texto do logo */
+  }
+
+  .header .nave .navbar a {
+      padding: 0.5rem; /* Espaçamento interno menor nos links */
+  }
+
+  .header .nave .icons a {
+      font-size: 1rem; /* Tamanho menor da fonte dos ícones */
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo h1 {
+      font-size: 1.2rem; /* Tamanho ainda menor do texto do logo */
+  }
+
+  .header .nave .navbar a {
+      padding: 0.3rem; /* Espaçamento interno mínimo nos links */
+  }
+
+  .header .nave .icons a {
+      font-size: 0.9rem; /* Tamanho ainda menor da fonte dos ícones */
+  }
+}
+/* Responsividade */
+@media (max-width: 768px) {
     .header .nave {
       flex-direction: column;
       align-items: center;

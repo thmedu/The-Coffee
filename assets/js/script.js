@@ -56,3 +56,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Função para carregar scripts JavaScript de forma assíncrona
+function loadScriptAsync(url) {
+    let script = document.createElement('script');
+    script.src = url;
+    script.async = true;
+    document.head.appendChild(script);
+}
+
+// Deferir o carregamento de scripts não críticos para depois que a página estiver carregada
+document.addEventListener('DOMContentLoaded', function() {
+    // Carregar script.js de forma assíncrona
+    loadScriptAsync('./assets/js/script.js');
+    loadScriptAsync('./assets/js/carrinho.js');
+});
+
+// Implementar caching de scripts
+// Idealmente, configure caching no servidor para arquivos estáticos como JavaScript
+// Exemplo de configuração de cache no servidor nginx:
+// location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+//     expires 30d;
+//     add_header Cache-Control "public";
+// }
+

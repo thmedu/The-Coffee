@@ -83,7 +83,7 @@ body {
 .header .nave .navbar a {
     color: #fff; /* Cor do texto dos links */
     text-decoration: none; /* Remove sublinhado dos links */
-    padding: 1rem; /* Espaçamento interno dos links */
+    padding: 1.8rem; /* Espaçamento interno dos links */
     transition: color 0.3s ease; /* Transição suave da cor do texto */
 }
 
@@ -97,17 +97,19 @@ body {
 }
 
 .header .nave .icons a {
-    margin-left: 15px; /* Espaçamento entre os ícones */
+    margin-left: 25px; /* Espaçamento entre os ícones */
     color: #fff; /* Cor inicial dos ícones */
     font-size: 1.2rem; /* Tamanho da fonte dos ícones */
     text-decoration: none; /* Remove sublinhado */
     transition: transform 0.3s ease, color 0.3s ease; /* Transições suaves */
+    max-height: ;
 }
 
 .header .nave .icons a:hover {
     transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
     color: #f0c143; /* Cor dos ícones ao passar o mouse */
 }
+
 /* Estilo para o botão flutuante na seção Home */
 .home .btn-floating {
     position: fixed; /* Posiciona o botão de forma fixa na tela */

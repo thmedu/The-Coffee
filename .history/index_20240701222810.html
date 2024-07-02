@@ -15,10 +15,24 @@
         <link rel="shortcut icon" href="./assets/img/logo5.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-            integrity="sha512-Sy3ahtzQKU4VzIL8IMwX9ml5ARVoM7rSzssZ4eT0w7+XURwDJiiC8H2ufyF2XwFy9tXyMMr3C9x07VdMvk0f9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        /* Estilos para os ícones na barra de navegação */
+.header .nave .icons {
+    display: flex; /* Torna o container dos ícones um flex container */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.header .nave .icons a {
+    margin-left: 15px; /* Espaçamento entre os ícones */
+    color: #fff; /* Cor inicial dos ícones */
+    font-size: 1.2rem; /* Tamanho da fonte dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+.header .nave .icons a:hover {
+    transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
+    color: #f0c143; /* Cor dos ícones ao passar o mouse */
+}
 
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
@@ -44,13 +58,10 @@
                         <a href="#address">Endereço</a>
                     </nav>
                     <div class="icons">
-                        <img
-                            src="https://img.icons8.com/pastel-glyph/30/ffffff/search--v2.png"
-                            alt="Ícone de Busca">
+                        <i class="fas fa-search"></i> <!-- Ícone de busca -->
                         <a href="#" class="cart-icon">
-                            <img
-                                src="https://img.icons8.com/material-outlined/30/ffffff/shopping-cart--v1.png"
-                                alt="Ícone de Carrinho">
+                            <i class="fas fa-shopping-cart"></i>
+                            <!-- Ícone de carrinho -->
                             <span class="cart-counter"></span>
                         </a>
                     </div>
@@ -79,25 +90,17 @@
                                 alt="Xícara de Café">
                         </div>
                         <div class="content">
-                            <p>
-                                A The Coffee foi fundada em 2015 com a missão de
-                                proporcionar cafés de alta qualidade e uma
-                                experiência única aos nossos clientes. Nossa
-                                paixão pelo café é refletida na seleção
-                                cuidadosa de grãos especiais e no preparo
-                                artesanal por baristas experientes.
-                            </p>
-                            <p>
-                                Em nosso café, você encontrará uma combinação
-                                perfeita de tradição e inovação, garantindo que
-                                cada xícara seja uma verdadeira celebração do
-                                sabor e aroma do café. Visite-nos e descubra por
-                                que somos reconhecidos como um destino de café
-                                premium em São Paulo.
-                            </p>
-                            <a href="#menu" class="btn">Explore nosso Menu</a>
+                            <p>A The Coffee nasceu do amor pelo café de alta
+                                qualidade. Desde a nossa fundação, em 2015,
+                                buscamos oferecer uma experiência única e
+                                acolhedora aos nossos clientes, combinando
+                                tradição e inovação.</p>
+                            <p>Nosso compromisso é servir cafés especiais
+                                selecionados, preparados por baristas
+                                experientes que compartilham a mesma paixão pelo
+                                café.</p>
+                            <a href="#menu" class="btn">Conheça nosso Menu</a>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -301,7 +304,7 @@
         </footer>
 
         <!-- Scripts JavaScript -->
-        <script src="./assets/js/script.min.js" async defer></script>
+        <script src="./assets/js/script.js"></script>
         <script src="./assets/js/carrinho.js"></script>
 
     </body>

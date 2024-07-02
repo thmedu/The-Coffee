@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo à The Coffee, sua cafeteria premium em São Paulo. Oferecemos uma variedade de cafés especiais, desde espresso a cappuccino. Venha nos visitar!">
+    <meta name="keywords" content="café, cafeteria, café especial, café premium, espresso, cappuccino, São Paulo">
+    <meta name="author" content="thomas">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsividade.css">
+    <link rel="stylesheet" href="./assets/css/carrinho.css">
+    <link rel="shortcut icon" href="./assets/img/logo5.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-Sy3ahtzQKU4VzIL8IMwX9ml5ARVoM7rSzssZ4eT0w7+XURwDJiiC8H2ufyF2XwFy9tXyMMr3C9x07VdMvk0f9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>The Coffee - Cafeteria Premium</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img src="./assets/img/logo5.png" alt="Logo The Coffee">
+                </a>
+            </div>
+            <div class="nave">
+                <nav class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#review">Avaliações</a>
+                    <a href="#address">Endereço</a>
+                </nav>
+                <div class="icons">
+                    <img src="https://img.icons8.com/pastel-glyph/30/ffffff/search--v2.png" alt="Ícone de Busca">
+                    <a href="#" class="cart-icon">
+                        <img src="https://img.icons8.com/material-outlined/30/ffffff/shopping-cart--v1.png" alt="Ícone de Carrinho">
+                        <span class="cart-counter"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <!-- Seção Home -->
+        <section id="home" class="home">
+            <div class="container">
+                <h1>Bem-vindo à The Coffee</h1>
+                <p>Sua cafeteria premium em São Paulo, oferecendo uma experiência única em cafés especiais.</p>
+                <a href="#home" class="btn-floating"> ↑</a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="title">Conheça <span>Nossa História</span></h2>
+                <div class="row">
+                    <div class="container-img">
+                        <img src="./assets/img/cafe-container2.jpg" alt="Xícara de Café">
+                    </div>
+                    <div class="content">
+                        <p>A The Coffee nasceu do amor pelo café de alta qualidade. Desde a nossa fundação, em 2015, buscamos oferecer uma experiência única e acolhedora aos nossos clientes, combinando tradição e inovação.</p>
+                        <p>Nosso compromisso é servir cafés especiais selecionados, preparados por baristas experientes que compartilham a mesma paixão pelo café.</p>
+                        <a href="#menu" class="btn">Conheça nosso Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Menu -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="title">Nosso <span>Menu</span></h2>
+                <div class="box-container">
+                    <!-- Item 1 -->
+                    <div class="box">
+                        <img src="./assets/img/cafes/Café com leite.png" alt="Café com Leite">
+                        <h3>Café com leite</h3>
+                        <div class="price">R$19,90 <span>R$15,99</span></div>
+                        <a href="#" class="btn add-to-cart" data-name="Café com leite" data-price="15.99">Adicione ao Carrinho</a>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="box">
+                        <img src="./assets/img/cafes/cafe-preto-porcelana.png" alt="Café Preto">
+                        <h3>Café Preto</h3>
+                        <div class="price">R$7,90 <span>R$10,99</span></div>
+                        <a href="#" class="btn add-to-cart" data-name="Café Preto" data-price="10.99">Adicione ao Carrinho</a>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="box">
+                        <img src="./assets/img/cafes/Expresso cubano.png" alt="Expresso Cubano">
+                        <h3>Expresso cubano</h3>
+                        <div class="price">R$12,90 <span>R$19,99</span></div>
+                        <a href="#" class="btn add-to-cart" data-name="Expresso cubano" data-price="19.99">Adicione ao Carrinho</a>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="box">
+                        <img src="./assets/img/cafes/café-desenho.png" alt="Café Cappuccino">
+                        <h3>Café Cappuccino</h3>
+                        <div class="price">R$15,90 <span>R$20,99</span></div>
+                        <a href="#" class="btn add-to-cart" data-name="Café Cappuccino" data-price="28.99">Adicione ao Carrinho</a>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="box">
+                        <img src="./assets/img/cafes/Café Mocha.png" alt="Café Mocha">
+                        <h3>Café Mocha</h3>
+                        <div class="price">R$20,90 <span>R$25,99</span></div>
+                        <a href="#" class="btn add-to-cart" data-name="Café Mocha" data-price="30.99">Adicione ao Carrinho</a>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="box">
+                        <img src="./assets/img/cafes/Café Latte.png" alt="Café Latte">
+                        <h3>Café Latte</h3>
+                        <div class="price">R$18,90 <span>R$24,99</span></div>
+                        <a href="#" class="btn add-to-cart" data-name="Café Latte" data-price="24.99">Adicione ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="cart-sidebar">
+            <div class="cart-header">
+                <h2>Seu Pedido</h2>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items">
+                <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+            </div>
+            <div class="cart-total">
+                Total: <span class="total-amount">R$ 0.00</span>
+            </div>
+            <div class="cart-buttons">
+                <button class="btn clear-cart">Limpar Pedido</button>
+                <a href="#" class="btn checkout">Finalizar Pedido <i class="fas fa-check"></i></a>
+            </div>
+        </aside>
+        
+        
+
+        <!-- Seção Avaliações -->
+        <section id="review" class="review">
+            <div class="container">
+                <h2 class="title">Avaliações <span>de Clientes</span></h2>
+                <div class="box-container">
+                    <!-- Avaliação 1 -->
+                    <div class="box">
+                        <p>"Ambiente acolhedor e cafés deliciosos. Recomendo!"</p>
+                        <img src="./assets/img/avaliçoes/img1.jpg" alt="Foto do Cliente 1" class="user">
+                        <h3>Julio Chaves</h3>
+                        <div class="stars">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                        </div>
+                    </div>
+
+                    <!-- Avaliação 2 -->
+                    <div class="box">
+                        <p>"Atendimento impecável e café de qualidade superior."</p>
+                        <img src="./assets/img/avaliçoes/img2.jpg" alt="Foto do Cliente 2" class="user">
+                        <h3>Carlos Barreto</h3>
+                        <div class="stars">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                        </div>
+                    </div>
+
+                    <!-- Avaliação 3 -->
+                    <div class="box">
+                        <p>"Ambiente muito agradável.Recomendo!"</p>
+                        <img src="./assets/img/avaliçoes/img3.jpg" alt="Foto do Cliente 3" class="user">
+                        <h3>Bruna Oliveira</h3>
+                        <div class="stars">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                            <img src="./assets/img/avaliação.svg" alt="Estrela">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Endereço -->
+        <section id="address" class="address">
+            <div class="container">
+                <h2 class="title">Nosso <span>Endereço</span></h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58519.9711140389!2d-46.75502065136721!3d-23.550544299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5757726ddc09%3A0x39ec20e62e868b26!2sThe%20Coffee!5e0!3m2!1spt-BR!2sbr!4v1712088182816!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="share">
+                <img src="https://img.icons8.com/ios/30/ffffff/instagram-new--v1.png" alt="Instagram">
+                <img src="https://img.icons8.com/ios/30/ffffff/facebook-new.png" alt="Facebook">
+                <img src="https://img.icons8.com/ios/30/ffffff/whatsapp--v1.png" alt="WhatsApp">
+                <img src="https://img.icons8.com/ios/30/ffffff/twitterx--v2.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/carrinho.js"></script>
+
+
+
+</body>
+
+</html>
