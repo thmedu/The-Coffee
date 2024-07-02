@@ -1,5 +1,5 @@
 
-# The Coffee ☕ - Projeto de Aplicativo para Cafeteria
+# The Coffee   ☕ - Projeto de Aplicativo para Cafeteria
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/devclub-cafeteria)
 ![GitHub license](https://img.shields.io/github/license/seu-usuario/devclub-cafeteria)
