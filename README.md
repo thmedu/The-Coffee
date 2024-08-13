@@ -1,65 +1,60 @@
 
 # The Coffee   ☕ - Projeto de Aplicativo para Cafeteria
-
-![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/devclub-cafeteria)
-![GitHub license](https://img.shields.io/github/license/seu-usuario/devclub-cafeteria)
-![GitHub stars](https://img.shields.io/github/stars/seu-usuario/devclub-cafeteria?style=social)
-![GitHub forks](https://img.shields.io/github/forks/seu-usuario/devclub-cafeteria?style=social)
-
-Projeto desenvolvido para demonstrar habilidades avançadas em desenvolvimento web com foco em um aplicativo de cafeteria. O projeto inclui funcionalidades como menu, endereço, sobre, carrinho de compras e muito mais.
+.
 
 ![Post minimalista marketing digital roxo branco e azul (2)](https://github.com/thmedu/The-Coffee/assets/141462806/cf032ed5-3c33-4184-bbbf-850817ddae7e)
 
-## Índice
+The Coffee - Template da Cafeteria
+O template The Coffee oferece uma estrutura moderna e elegante para apresentar informações essenciais sobre uma cafeteria, incluindo menu, avaliações de clientes, endereço e localização no mapa. Ele é projetado para ser visualmente atraente e fácil de navegar, proporcionando uma excelente experiência ao usuário.
 
-- [Visão Geral](#visão-geral)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Como Usar](#como-usar)
-- [Exemplo](#exemplo)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-
-## Visão Geral
-
-O template da cafeteria oferece uma estrutura simples e eficaz para apresentar informações essenciais sobre a cafeteria, como menu, avaliações de clientes, endereço e localização no mapa. Possui um cabeçalho fixo que facilita a navegação, mesmo ao rolar pela página.
-
-## Tecnologias Utilizadas
-
+Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+HTML5: Para estruturar o conteúdo da página.
+CSS3: Para estilizar e dar aparência ao conteúdo, incluindo animações e responsividade.
+JavaScript: Para adicionar interatividade e funcionalidades dinâmicas.
+Bootstrap: Framework CSS utilizado para facilitar o design responsivo e componentes reutilizáveis.
+jQuery: Biblioteca JavaScript utilizada para simplificar a manipulação do DOM e eventos.
+Font Awesome: Biblioteca de ícones utilizada para adicionar ícones visuais ao site.
+Estrutura do Projeto
 
-## Como Usar
 
+Funcionalidades
+Cabeçalho Fixo: Facilita a navegação ao manter o menu sempre visível no topo da página.
+Seção de Apresentação: Inclui uma imagem de destaque e uma breve descrição da cafeteria.
+Menu da Cafeteria: Exibe uma lista de itens disponíveis no menu com descrições e preços.
+Sobre Nós: Seção dedicada para apresentar a história e a missão da cafeteria.
+Avaliações de Clientes: Seção dedicada para exibir feedbacks e avaliações de clientes.
+Galeria de Fotos: Exibe fotos da cafeteria e dos produtos oferecidos.
+Equipe: Apresenta os membros da equipe com fotos e descrições.
+Endereço e Mapa: Exibe o endereço da cafeteria com um mapa interativo para facilitar a localização.
+Formulário de Contato: Permite que os visitantes enviem mensagens diretamente pelo site.
+Rodapé: Inclui informações de contato e links para redes sociais.
+Como Usar
 Para utilizar o template da cafeteria, siga as etapas abaixo:
 
-1. **Clone o repositório para o seu computador:**
+Clone o repositório para o seu computador:
+sh
+Copiar
 
-   ```bash
-   git clone https://github.com/seu-usuario/devclub-cafeteria.git
-   ```
+    git clone https://github.com/thmedu/The-Coffee.git
+Navegue até o diretório do projeto:
+sh
+Copiar
 
-2. **Navegue até o diretório do projeto:**
+    cd The-Coffee
+Abra o arquivo index.html em seu navegador da web para visualizar o template.
+Personalização
+Para personalizar o template, você pode editar os seguintes arquivos:
 
-   ```bash
-   cd devclub-cafeteria
-   ```
+index.html: Modifique o conteúdo HTML para alterar textos, imagens e estrutura da página.
+css/style.css: Edite o arquivo CSS para alterar estilos, cores, fontes e layout.
+js/script.js: Adicione ou modifique scripts JavaScript para alterar a funcionalidade e interatividade da página.
+Exemplo
+Uma demonstração do template da cafeteria pode ser encontrada aqui.
 
-3. **Abra o arquivo `index.html` em seu navegador da web para visualizar o template.**
-
-## Exemplo
-
-Uma demonstração do template da cafeteria pode ser encontrada [aqui](https://github.com/seu-usuario/devclub-cafeteria).
-
-## Contribuição
-
+Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções de bugs ou novos recursos. Certifique-se de seguir as diretrizes de contribuição.
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](./LICENSE).
-
-
+Licença
+Este projeto está licenciado sob a Licença MIT.
